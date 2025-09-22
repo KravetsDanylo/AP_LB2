@@ -24,6 +24,8 @@ public class Main {
         trains.add(new Train("Вінниця", 1220, "4:10", 0, 78, 44, 19));
         trains.add(new Train("Тернопіль", 5552, "19:55", 90, 56, 30, 15));
         trains.add(new Train("Чернігів", 7823, "22:40", 150, 64, 15, 20));
+        trains.add(new Train("Івано-Франківськ", 3212, "2:40", 100, 43, 5, 4));
+
     }
     public static void main(String[] args) {
         Main.creationOfList();
