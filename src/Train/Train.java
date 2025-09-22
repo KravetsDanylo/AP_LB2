@@ -55,8 +55,7 @@ public class Train {
     public boolean validTime(String time){
         int hour = Integer.parseInt(time.split(":")[0]);
         int minute = Integer.parseInt(time.split(":")[1]);
-        if(hour > 0 && hour < 24 && minute > 0 && minute < 60 ){return true;}
-        return false;
+        return hour > 0 && hour < 24 && minute > 0 && minute < 60;
     }
 
     @Override

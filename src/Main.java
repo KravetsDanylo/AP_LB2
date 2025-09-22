@@ -29,7 +29,7 @@ public class Main {
     }
     public static void main(String[] args) {
         Main.creationOfList();
-        int userChoice = 0;
+        int userChoice;
         boolean cont = true;
         Scanner sc = new Scanner(System.in);
         String userDestination;
@@ -67,12 +67,19 @@ public class Main {
     }
 
     public static void menu(){
-        System.out.println("\nЩо ви хочете дізнатися:" +
-                "\n1. Поїзди, які прямують до заданого місця призначення;" +
-                "\n2. Поїзди, які прямують до заданого місця призначення та відправляються після заданої години;" +
-                "\n3. Поїзди, які  які відправляються до заданого пункту призначення та мають загальні місця;" +
-                "\n4. Вихід з програми" +
-                "\nВаш вибір: ");
+        System.out.println("""
+                
+                Що ви хочете дізнатися:\
+                
+                1. Поїзди, які прямують до заданого місця призначення;\
+                
+                2. Поїзди, які прямують до заданого місця призначення та відправляються після заданої години;\
+                
+                3. Поїзди, які  які відправляються до заданого пункту призначення та мають загальні місця;\
+                
+                4. Вихід з програми\
+                
+                Ваш вибір:\s""");
     }
     public static int toMinute(String time){
         int hour = Integer.parseInt(time.split(":")[0]);
